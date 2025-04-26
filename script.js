@@ -102,7 +102,7 @@ function updateBook(book, title, author, ratings) {
 
     // Update the book's DOM element directly
     const bookElement = document.querySelector(`.book-element[data-id="${book.id}"]`);
-    bookElement.querySelector('h1').innerHTML = `<u>${book.title}</u>`;
+    bookElement.querySelector('h1').innerHTML = `${book.title}`;
     bookElement.querySelector('p').textContent = book.author;
     bookElement.querySelectorAll('p')[1].textContent = book.ratings;
 
