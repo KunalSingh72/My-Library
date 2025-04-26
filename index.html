@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/book.png" alt="Library Logo" height="50">
+        <h1>Library</h1>
+    </header>
+
+    <section id="container">
+
+        <!-- Dialog for Book Form -->
+        <dialog id="book-dialog">
+            <form id="form-container">
+                <h2>New Book</h2>
+
+                <input id="book-title" class="form-field book-title" type="text" placeholder="Title" required>
+
+                <input id="author-name" class="form-field author-name" type="text" placeholder="Author" required>
+
+                <input id="book-rating" class="form-field ratings" type="number" placeholder="Rating" min="1" max="5" required>
+
+                <div id="form-btns">
+                    <button id="form-add-btn" type="submit">Add</button>
+                    <button id="close-form-btn" type="button">Close</button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- Button to Open Book Form -->
+        <div id="btn-container">
+            <button id="new-form-btn" aria-label="Add New Book">New</button>
+        </div>
+
+        <!-- Container for Book Elements -->
+        <div id="book-container"></div>
+
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>
